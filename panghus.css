@@ -39,11 +39,11 @@ body {
 }
 
 .imgLogo {
-	width: 50px;
-	height: 50px;
+	width: 100px;
+	height: 100px;
 	position: absolute;
-  bottom: 8px;
-  right: 16px;
+  top: 12px;
+  left: 16px;
 }
 
 .productImg {
@@ -62,7 +62,7 @@ body {
 }
 
 .headLines {
-	margin: 33px 20px;
+	margin-top: 33px;
 }
 
 h1 {
@@ -71,25 +71,29 @@ h1 {
 	text-transform:uppercase;
 	font-size: large;
 	margin-bottom: 0px;
-	margin-top: 0px;
+  margin-top: 0px;
+  letter-spacing: 1px;
 }
 
 h2 {
 	/* font-family: gothamBold, serif; */
 	font-family: gothamBook, sans-serif;
-	font-size: 11px;
+	font-size: 10px;
 	padding: 14px 6px;
 	margin: 0px;
 	color: #82a1b4;
-	text-transform:uppercase;
+  text-transform:uppercase;
+  letter-spacing: 1px;
+  line-height: 1.6;
 }
 
 h3 {
-	font-family: gothamBook, sans-serif;
+	font-family: gothamBold, sans-serif;
 	font-size: 11px;
 	padding: 8px 5px;
 	margin: 0px;
-	color: #82a1b4;
+  color: #82a1b4;
+  font-weight: bold;
 }
 
 button {
