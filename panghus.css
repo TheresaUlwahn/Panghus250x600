@@ -97,9 +97,10 @@ h3 {
 }
 
 button {
-padding: 0;
+  padding: 0;
 	border: solid 2px #82a1b4;
 	background-color:transparent;
+	margin-top: 20px;
 	/* border: none; */
 }
 
