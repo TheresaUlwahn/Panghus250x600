@@ -25,7 +25,6 @@ body {
 .banner {
 	display: flex;
 	flex-direction: column;
-	/* place-content: space-between; */
 	width: 250px;
 	height: 600px;
 	background-color: #f3f3f3;
@@ -50,7 +49,6 @@ body {
 	width: 250px;
 	height: 100%;
 	object-fit: cover;
-
 }
 
 .info {
@@ -62,7 +60,8 @@ body {
 }
 
 .headLines {
-	margin-top: 33px;
+  margin-top: 35px;
+  margin-bottom: 9px;
 }
 
 h1 {
@@ -88,25 +87,55 @@ h2 {
 }
 
 h3 {
-	font-family: gothamBold, sans-serif;
+	font-family: gothamBook, sans-serif;
 	font-size: 11px;
-	padding: 8px 5px;
+  padding: 1px 5px;
 	margin: 0px;
-  color: #82a1b4;
-  font-weight: bold;
+  color: #ffff;
+  line-height: 1.6;
 }
 
-button {
-  padding: 0;
-	border: solid 2px #82a1b4;
-	background-color:transparent;
-	margin-top: 20px;
-	/* border: none; */
-}
-
-button :hover {
-	cursor: pointer;
-	padding: 8px 5px;
+.glossy-button {
+	/* display: inline-block; */
+	position: relative;
 	background-color: #82a1b4;
-	color: #f3f3f3;
+	/* background-color: #AAA; */
+	background-image: linear-gradient( /* chrome */
+	  hsla(0, 0%, 100%, 0.6), hsla(0, 0%, 100%, 0) 50%,
+	  hsla(0, 0%, 0%, 0.3) 90%, hsla(0, 0%, 100%, 0.2)
+	);
+	padding: 5px 10px;
+	text-shadow:
+	  0 0 15px hsla(0, 0%, 100%, 1), /* bloom */
+	  0 2px 4px hsla(0, 0%, 0%, 0.7); /* drop shadow */
+	border: none;
+	border-radius: 50px;
+	/* margin: 10px; */
+	box-shadow:
+	  inset 0 -5px 20px hsla(0, 0%, 0%, 0.4), /* top light */
+	  inset 0 5px 20px hsla(0, 0%, 100%, 0.4); /* bottom shadow */
+
+	cursor: pointer;
+	transition: transform 0.1s, box-shadow 0.1s;
+  }
+  
+.glossy-button:before {
+	content: '';
+	display: block;
+	position: absolute;
+  width: 109px;
+  left: 11px;
+  right: 20px;
+  top: 2px;
+  height: 12px;
+	border-radius: 15px;
+	background: linear-gradient(
+	  hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0) );
+  }
+  
+.glossy-button:hover {
+transform: scale(1.05);
+box-shadow:
+  inset 0 -5px 20px hsla(0, 0%, 0%, 0.4), /* top light */
+  inset 0 5px 20px hsla(0, 0%, 100%, 0.4), /* bottom shadow */
 }
